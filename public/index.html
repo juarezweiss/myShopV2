@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="bundle.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  </head>
+  <body>
+    <div id="myDIV" class="header">
+      <h2>MyShop Application v2</h2>
+      <table>
+        <tr>
+          <td>
+            <button id="addItemBtn" class="btn btn-primary btn-lg">Add item</button>
+          </td>
+          <td>
+            <button id="buyerRegBtn" class="btn btn-primary btn-lg">Show/Hide registration events</button>
+          </td>
+          <td>
+            <button id="switchOrderItemBtn" class="btn btn-primary btn-lg">Show orders</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="addItemDiv" class="addItemDiv">
+      <form id="addItem">
+        <div class="form-group">
+          <h6>Add item (owner only):</h6>
+          <input id="addItemID" type="number" placeholder="Item ID (number)" class="form-control"></input>
+          <input id="addItemName" type="string" placeholder="Item name" class="form-control"></input>
+          <input id="addItemDesc" type="string" placeholder="Item description" class="form-control"></input>
+          <input id="addItemInvent" type="number" placeholder="Item inventory (number)" class="form-control"></input>
+          <input id="addItemPrice" type="number" placeholder="Item price (in wei)" class="form-control"></input>
+        </div>
+        <button type="submit" class="btn btn-outline-primary">Add</button>
+      </form>
+    </div>
+
+    <div id="regEventsDiv">
+      <h5>Registration events:</h5>
+      <div class="text-left">
+        <ul id="regEventsList">
+        </ul>
+      </div>
+      <hr>
+    </div>
+
+    <div id="listItems">
+      <h5>List of registered items:</h5>
+      <ul id="listItemsUL">
+      </ul>
+    </div>
+
+    <div id="listOrders">
+      <h5>List of registered orders:</h5>
+      <ul id="orderListUL">
+      </ul>
+    </div>
+  </body>
+</html>
